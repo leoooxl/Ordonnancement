@@ -3,6 +3,11 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import numpy as np
 
+""" Cette version a pour but de créer un ordonnanceur virtuel qui applique un algorithme d'ordonnancement défini et qui affiche 
+    à la fois l'odre d'éxécution des processus mais aussi leur état au cours du temps """
+
+
+
 class Processus:
     def __init__(self, nom, temps_exec, arrivee, d_blocage={}, prio=0):
         assert isinstance(d_blocage, dict)
